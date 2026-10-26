@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF099 0%, #D4AF37 50%, #997A15 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #E5C158 0%, #D4AF37 50%, #AA820A 100%);
+}
+
+.credential-input {
+  width: 100%;
+  border: 1px solid #262626;
+  border-radius: 0.75rem;
+  background: #0a0a0a;
+  padding: 0.7rem 0.9rem;
+  color: #fff;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 150ms ease;
+}
+
+.credential-input::placeholder {
+  color: #737373;
+}
+
+.credential-input:focus {
+  border-color: #d4af37;
+}
